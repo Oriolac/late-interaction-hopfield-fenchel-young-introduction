@@ -1,0 +1,268 @@
+QUERY TEXT: What are the main ingredients of Fricandó? Where is it from?
+Loading weights: 100%|██████████| 723/723 [00:00<00:00, 5908.84it/s]
+Model: Qwen3_5ForConditionalGeneration
+Device: mps
+Number of layers: 32
+Selected layer: 6
+
+MEMORY BANK
+Sentence vectors: torch.Size([8, 38, 2560])
+Query vector: torch.Size([16, 2560])
+Memory mask: torch.Size([8, 38])
+
+HFY RETRIEVAL
+0.467605 | Fricandó is a traditional Catalan dish. Their main ingredients are slices of beef and mushrooms. It is served with a riched sauce. It can be served at breakfast or lunch.
+0.285548 | Fricandó is a typical 'esmorzar de forquilla', that means that is a catalan brunch dish. However, it is known to be eaten during lunch too.
+0.246848 | An special ingredient that Fricandó has is toasted almonds. It is usually the last ingredient to be put.
+0.000000 | Esmorzar de forquilla is a similar concept of brunch in Catalonia. Normally stews and meat dishes are served.
+0.000000 | Sunny and warm weather make people happier.
+0.000000 | Rainy and cold weather can negatively affect people's mood.
+0.000000 | People tend to spend more time outdoors when the weather is pleasant.
+0.000000 | Paella is a traditional Valencian dish. The original version is called "Paella Valenciana".
+Iterations: 4
+
+================================================================================
+HOPFIELD LATE-INTERACTION — GENERATION EXPERIMENTS
+================================================================================
+Model:                 Qwen/Qwen3.5-4B
+Device:                mps
+Injection layer:       6/32
+HFY alpha:             1.85
+HFY beta:              5
+Token alpha:           1.85
+Token beta:            5
+HFY iterations:        4
+Stored memories:       8
+Reserved HFY tokens:   16
+HFY state shape:       (16, 2560)
+Top-1 memory shape:    (38, 2560)
+HFY state norm:        38.2242
+Random control norm:   38.2242
+Max generated tokens:  260
+
+--------------------------------------------------------------------------------
+QUERY
+--------------------------------------------------------------------------------
+What are the main ingredients of Fricandó? Where is it from?
+
+--------------------------------------------------------------------------------
+MEMORY RETRIEVAL RANKING
+--------------------------------------------------------------------------------
+ 1. Weight: 0.467605 | Fricandó is a traditional Catalan dish. Their main ingredients are slices of beef and mushrooms. It is served with a riched sauce. It can be served at breakfast or lunch.
+ 2. Weight: 0.285548 | Fricandó is a typical 'esmorzar de forquilla', that means that is a catalan brunch dish. However, it is known to be eaten during lunch too.
+ 3. Weight: 0.246848 | An special ingredient that Fricandó has is toasted almonds. It is usually the last ingredient to be put.
+ 4. Weight: 0.000000 | Esmorzar de forquilla is a similar concept of brunch in Catalonia. Normally stews and meat dishes are served.
+ 5. Weight: 0.000000 | Sunny and warm weather make people happier.
+ 6. Weight: 0.000000 | Rainy and cold weather can negatively affect people's mood.
+ 7. Weight: 0.000000 | People tend to spend more time outdoors when the weather is pleasant.
+ 8. Weight: 0.000000 | Paella is a traditional Valencian dish. The original version is called "Paella Valenciana".
+
+================================================================================
+EXPERIMENT 1/9
+BASELINE
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that holds a special place in the culinary history of the Iberian Peninsula. Here are the details regarding its origin and key ingredients:
+
+### Origin
+Fricandó is a traditional dish from **Spain**, specifically associated with the region of **Castile and León** (and widely enjoyed throughout the country). It is considered a staple of the *cocina castellana* (Castilian cuisine). The dish has a long history, with roots dating back to the Middle Ages, originally prepared by knights and nobility before becoming a beloved home-cooked meal for commoners. It is often served as a main course or a hearty side dish.
+
+### Main Ingredients
+While recipes can vary slightly by family or region, the authentic fricandó is defined by its simplicity and the specific combination of meats and vegetables. The core components are:
+
+*   **Meats**: The dish traditionally features a mix of **pork** and **beef**. Common cuts include pork shoulder (*lomo*), pork belly, and beef shank or chuck. Some variations may include lamb or game meats, but the pork-beef combination is the most standard.
+*   **Vegetables**: The primary vegetable is **onion**, which is
+
+--------------------------------------------------------------------------------
+Execution time: 89.52 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 2/9
+RESERVED TOKEN CONTROL
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that has become a staple in many households, particularly in the Basque Country and the northern regions of Spain.
+
+### Origin
+The dish originates from **Spain**, specifically the **Basque Country** (Euskadi). While it is deeply rooted in Basque culinary tradition, it has become so popular across the entire country that it is often considered a national dish. The name itself is derived from the Basque word *fricaz*, meaning "to fry" or "to sauté," which describes the cooking method used.
+
+### Main Ingredients
+The authenticity of a traditional fricandó relies on a specific combination of ingredients, though recipes can vary slightly by region. The core components are:
+
+*   **Meat**: The most common cut is **pork loin** (often called *lomo*), but it can also be made with beef, lamb, or chicken. The meat is usually cut into small, bite-sized cubes.
+*   **Onions**: A large quantity of **yellow onions** is essential. They are sliced into thin rings or half-moons and form the base of the dish.
+*   **Tomatoes**: Fresh **tomatoes** (often peeled and chopped) are added to
+
+--------------------------------------------------------------------------------
+Execution time: 103.06 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 3/9
+HFY WEIGHTED TOKEN MEMORY
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that translates to "fried piece" or "braised cutlet." It is a staple of traditional Spanish cuisine, particularly associated with the **Catalonia** region, though it is widely enjoyed throughout Spain.
+
+Here are the details regarding its origin and main ingredients:
+
+### Origin
+Fricandó originates from **Catalonia** in northeastern Spain. It is a traditional dish often served as a main course or a tapa. While the specific recipe has evolved over centuries, its roots lie in the rustic cooking traditions of the Catalan countryside, where meat was slow-cooked with local vegetables and herbs to create a rich, flavorful stew.
+
+### Main Ingredients
+The dish is defined by its simplicity and the quality of its components. The core ingredients typically include:
+
+*   **Meat**: The most common cut is **pork loin** (often a thick slice or a small roast), though beef or veal can also be used. The meat is usually pounded thin and fried until golden brown before being braised.
+*   **Vegetables**: The signature vegetable is **potatoes**, which are sliced into rounds or wedges and added to the pot. Other common additions include:
+    *   **Onions
+
+--------------------------------------------------------------------------------
+Execution time: 106.26 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 4/9
+SOFTMAX TOKEN MEMORY
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that holds a special place in the culinary history of the Iberian Peninsula. Here are the details regarding its origin and main ingredients:
+
+### Origin
+Fricandó is a traditional dish from **Spain**, specifically originating in the **Basque Country** (Euskadi). It is a staple of Basque cuisine and is often served as a main course or a hearty side dish. The dish is named after the Basque word *fricaz*, which refers to the method of slow-cooking meat in a sauce.
+
+### Main Ingredients
+While recipes can vary slightly by region, the authentic Fricandó is characterized by a specific combination of ingredients that create a rich, savory, and slightly sweet sauce. The core components include:
+
+*   **Meat**: Traditionally made with **pork** (often a mix of pork shoulder and ribs) or **beef**. In some variations, chicken or lamb may be used, but pork is the most common.
+*   **Onions**: A large quantity of onions is essential, usually chopped finely and cooked until soft and translucent.
+*   **Tomatoes**: Fresh tomatoes (or tomato paste) are added to create the base of the sauce, giving it
+
+--------------------------------------------------------------------------------
+Execution time: 104.33 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 5/9
+SPARSEMAX TOKEN MEMORY
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that translates to "fried piece" or "braised cutlet." It is a staple of traditional Spanish cuisine, particularly associated with the **Catalonia** region, though it is widely enjoyed throughout Spain.
+
+Here are the details regarding its origin and main ingredients:
+
+### Origin
+Fricandó originates from **Catalonia**, Spain. It is a traditional dish often served as a main course or a tapa. While the specific recipe has evolved over centuries, its roots lie in the rustic cooking traditions of the Catalan countryside, where meat was slow-cooked with local vegetables and herbs to create a rich, flavorful stew.
+
+### Main Ingredients
+The dish is defined by its simplicity and the quality of its core components. The traditional recipe typically includes:
+
+*   **Meat**: The most common cut is **pork loin** (often a thick slice or a small roast), though beef or veal can also be used. The meat is usually pounded thin and fried until golden brown before being braised.
+*   **Vegetables**: The signature vegetable is **potato**, which is sliced into rounds and fried separately. Other vegetables often added include **carrots**, **onions**, and sometimes **peas
+
+--------------------------------------------------------------------------------
+Execution time: 100.03 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 6/9
+RANDOM MEMORY CONTROL
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that holds a special place in the culinary history of the Basque Country.
+
+### Origins
+The dish is **from the Basque Country** (specifically the region of *Euskal Herria*). It is considered one of the most representative and traditional dishes of Basque cuisine. While it has been enjoyed across Spain for centuries, its roots are deeply tied to the Basque identity and the agricultural traditions of the northern Pyrenees.
+
+### Main Ingredients
+The preparation of fricandó is simple, relying on high-quality local ingredients. The main components are:
+
+*   **Beef**: Traditionally, the meat is **beef shank** (the *pierna* of the cow). This cut is chosen because it is rich in connective tissue and fat, which breaks down during the long cooking process to create a tender, flavorful result.
+*   **Onions**: Large quantities of **onions** are essential. They are sliced and cooked until they become very soft and sweet, forming the base of the sauce.
+*   **Tomatoes**: Fresh **tomatoes** (often peeled and chopped) are added to create a reddish, slightly acidic sauce that balances the richness of the meat
+
+--------------------------------------------------------------------------------
+Execution time: 104.71 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 7/9
+ZERO MEMORY CONTROL
+================================================================================
+
+ANSWER:
+**Fricandó** is a classic Spanish dish that holds a special place in the culinary history of the Basque Country.
+
+### Origins
+The dish is **from the Basque Country** (specifically the region of *Euskal Herria*). It is considered one of the most representative and traditional dishes of Basque cuisine. While it has been enjoyed across Spain for centuries, its roots are deeply tied to the Basque identity and the agricultural traditions of the northern Pyrenees.
+
+### Main Ingredients
+The defining characteristic of fricandó is its simplicity and the use of fresh, local produce. The main ingredients are:
+
+*   **Beef**: Traditionally, the meat is **beef tongue** (*lengua de res*), though in some variations, beef shanks or other cuts of beef are used. The tongue is usually cleaned and cut into small cubes.
+*   **Onions**: A large quantity of **onions** is essential. They are sliced and fried until they become soft and translucent, forming the base of the sauce.
+*   **Tomatoes**: Fresh **tomatoes** (often peeled and chopped) are added to create a rich, red sauce.
+*   **Garlic**: Minced **garlic**
+
+--------------------------------------------------------------------------------
+Execution time: 98.99 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 8/9
+TOP-1 MEMORY INJECTION
+================================================================================
+
+ANSWER:
+There appears to be a slight confusion in the premise of your question. **Fricandó** is indeed a traditional Catalan dish, but it is **not** made with mushrooms, nor is it typically served at breakfast.
+
+Here are the correct details regarding the dish:
+
+### Origin
+**Fricandó** is a classic dish from **Catalonia**, Spain. It is a staple of Catalan cuisine and is often associated with the region's hearty, rustic cooking traditions.
+
+### Main Ingredients
+The traditional recipe relies on a specific combination of meats and vegetables, rather than mushrooms:
+*   **Meat**: It is traditionally made with **beef** (often a mix of beef and pork, or just beef), cut into small cubes.
+*   **Vegetables**: The primary vegetable is **onions**, which are sautéed until soft. **Potatoes** are also a standard component, added to the stew.
+*   **Seasoning**: It is seasoned with garlic, paprika, and sometimes a touch of tomato paste or wine.
+*   **Sauce**: The dish is cooked slowly in its own juices to create a thick, rich sauce, though it is not usually described as having a "riched sauce" in the sense
+
+--------------------------------------------------------------------------------
+Execution time: 110.69 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT 9/9
+TEXT RETRIEVAL
+================================================================================
+
+ANSWER:
+Based on the provided context, the main ingredients of Fricandó are **slices of beef and mushrooms**. It is a traditional dish from **Catalonia** (Catalan).
+
+
+--------------------------------------------------------------------------------
+Execution time: 11.27 seconds
+Status: SUCCESS
+
+================================================================================
+EXPERIMENT SUMMARY
+================================================================================
+Experiment                       Status         Time (s)
+--------------------------------------------------------------------------------
+BASELINE                         SUCCESS           89.52
+RESERVED TOKEN CONTROL           SUCCESS          103.06
+HFY WEIGHTED TOKEN MEMORY        SUCCESS          106.26
+SOFTMAX TOKEN MEMORY             SUCCESS          104.33
+SPARSEMAX TOKEN MEMORY           SUCCESS          100.03
+RANDOM MEMORY CONTROL            SUCCESS          104.71
+ZERO MEMORY CONTROL              SUCCESS           98.99
+TOP-1 MEMORY INJECTION           SUCCESS          110.69
+TEXT RETRIEVAL                   SUCCESS           11.27
+================================================================================
